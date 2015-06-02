@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app='Claimtown'>
+<head>
+	<title>Claims</title>
+
+</head>
+<style type="text/css">
+	.eachClaim{
+		margin-top: 100px;
+		border-radius: 5px;
+  		
+  		color: black;
+  		background-color: #F0F5FF;
+  		transition: 0.5s ease-in-out;
+  		border-style: inset;
+	}
+	.eachClaim:hover{
+  		opacity: 1;
+  		-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+</style>
+
+<body>
+	<input class='search' type='text' ng-model='search' placeholder='Search Claims'/>
+	<h1 class='explore'>Explore Claims</h1>
+
+<div ng-controller='ClaimsController' ng-submit='addClaim(claimData)'>
+
+    <div class='eachClaim' ng-repeat='arrayClaim in arrayClaims | filter:search'>{{arrayClaim.body}}</div>
+
+</div>
+</body>
+
+</html>

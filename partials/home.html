@@ -1,0 +1,48 @@
+<<!DOCTYPE html>
+<html ng-app='Claimtown'>
+
+<head>
+	<title>Home</title>
+
+</head>
+
+
+<body>
+
+<div class="homeTitle" >
+	<img src="images/ClaimtownNoText.svg"/>
+</div>
+
+<form ng-controller='ClaimsController' ng-submit='addClaim(claimData)'>
+	<fieldset class="form-group">
+    	<textarea type='text' ng-model='claimData.body' class="form-controller" placeholder="What's your claim?" title="State your claim"></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+        <input type="submit" class="btn" value="Claim it!"/>
+    </fieldset>
+
+</form>
+
+<!--
+  <div ng-controller="ClaimsController">
+  <form novalidate class="simple-form">
+    Name: <textarea>type="text" ng-model="user.name"</textarea>  /><br />
+    E-mail: <input type="email" ng-model="user.email" /><br />
+    Gender: <input type="radio" ng-model="user.gender" value="male" />male
+    <input type="radio" ng-model="user.gender" value="female" />female<br />
+    <input type="button" ng-click="reset()" value="Reset" />
+    <input type="submit" ng-click="update(user)" value="Save" />
+  </form>
+  <pre>form = {{user | json}}</pre>
+  <pre>master = {{master | json}}</pre>
+  <pre>arrayMaster = {{arrayMaster[0].name | json}}</pre>
+</div>
+-->
+
+<div>
+
+</div>
+
+</body>
+
+</html>

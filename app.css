@@ -1,0 +1,111 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.claims{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  width:400px;
+  margin: 10px auto;
+
+
+}
+
+.claimsBody{
+  padding: 20px;
+}
+
+.listHeader{
+  font-size: 300%;
+  text-align: center;
+  margin-top: 80px;
+}
+.homeTitle img {
+  font-size: 500%;
+  display: block;
+  margin: 0 auto; 
+  margin-top: 100px;
+  width:100px;
+  height: 100px;
+}
+.navbar-inverse .navbar-brand{
+  color:#993366;
+}
+.form-controller{
+  width: 300px;
+  height: 35px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+body {
+  background-color: #AC3C3C;
+}
+.form-group input{
+  display: block;
+  margin: 0 auto;
+}
+.claimsTest{
+  font-size: 500%;
+}
+.eachClaim{
+  margin-top: 300px;
+  width: 400px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  
+  border-style: inset;
+
+}
+.claimTitle{
+  font-size: 500%;
+  display: block;
+  margin: 10px auto; 
+  margin-top: 100px;
+}
+.explore{
+  font-size: 500%;
+  margin-top: 100px;
+  text-align: center;
+  color: #222;
+  text-shadow: 0px 2px 3px #555;
+}
+.search{
+  float:right;
+  margin: 10px;
+  margin-top: -60px;
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+}
