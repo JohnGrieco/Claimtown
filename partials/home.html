@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html ng-app='Claimtown'>
 
 <head>
@@ -13,7 +13,7 @@
 	<img src="images/ClaimtownNoText.svg"/>
 </div>
 
-<form ng-controller='ClaimsController' ng-submit='addClaim(claimData)'>
+<form novalidate ng-controller='ClaimsController' ng-submit='addClaim(claimData)'>
 	<fieldset class="form-group">
     	<textarea type='text' ng-model='claimData.body' class="form-controller" placeholder="What's your claim?" title="State your claim"></textarea>
     </fieldset>
