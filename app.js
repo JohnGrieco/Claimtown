@@ -31,7 +31,7 @@ angular.module('Claimtown')
 
         				ngDialog.open({
 							template: 'partials/popup.html',
-							//controller: 'FirstDialogCtrl',
+							controller: 'FirstDialogCtrl',
 							className: 'ngdialog-theme-default'
 
 						});
@@ -41,22 +41,7 @@ angular.module('Claimtown')
 
 		}		
 
-			$scope.addCat = function(claimData){
-
-						//$scope.claimCat = claimData;
-						$scope.arrayClaims[arrayClaims.length-1].category = claimData.category;
-						$scope.arrayClaims[arrayClaims.length-1].location = claimData.location;
-			        	//$scope.arrayClaims.push($scope.claim)
-			        	$scope.claimData = ''
-			        	console.log('test');
-
-			        	ngDialog.close('ngdialog1');
-			        	ngDialog.open({
-			        		template: 'partials/popup2.html',
-			        		className: 'ngdialog-theme-default'
-			        	})
-			}
-
+			
 
 
     
@@ -65,6 +50,23 @@ angular.module('Claimtown')
 
 }]);
 
+angular.module('Claimtown')
+.controller('FirstDialogCtrl',['$scope', 'ngDialog', function($scope, ngDialog){
+$scope.addCat = function(claimData){
+
+						//$scope.claimCat = claimData;
+						$scope.arrayClaims[arrayClaims.length-1].category = claimData.category;
+						$scope.arrayClaims[arrayClaims.length-1].location = claimData.location;
+			        	//$scope.arrayClaims.push($scope.claim)
+			        	$scope.claimData = ''
+			        	console.log('test');
+
+			        	ngDialog.closeAll();
+			        	ngDialog.open({
+			        		template: 'partials/popup2.html',
+			        		className: 'ngdialog-theme-default'
+			        	})
+			}
 
 
-
+}]);

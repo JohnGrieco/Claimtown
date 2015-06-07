@@ -12,7 +12,7 @@
 		<br>
 		<br>
 		<h3 class="currentClaim">Select a category for your claim</h3>
-		<form ng-controller='ClaimsController' ng-submit='addCat(claimData)'>
+		<form ng-controller='FirstDialogCtrl' ng-submit='addCat(claimData)'>
 			<input type="radio" ng-model='claimData.category' value='restaurant/bar'> Restaurant/Bar<br>
 			<input type="radio" ng-model='claimData.category' value='non-food-business'> Business<br>
 		<textarea type="text" ng-model='claimData.location' placeholder='City, State'></textarea>
